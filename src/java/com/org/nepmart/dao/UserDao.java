@@ -9,7 +9,7 @@ public interface UserDao {
 
 	public List<Users> getAllUsers();
 
-	public void updateUser(String uName);
+	public void updateUser(Users user);
 
 	public Users getUserByUName(String uName);
 

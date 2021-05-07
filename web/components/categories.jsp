@@ -15,8 +15,9 @@
         Add Category 
     </button>
 </div>
-<div class="card-container-fluid table-responsive-lg user-table mt-2" style="max-height: 70vh; overflow: auto;">
+<div class="card-container-fluid table-responsive-lg user-table mt-2" style="max-height: 70vh; overflow: auto; display: block">
 
+    <br>
     <table class="table table-striped">
         <thead  class="thead-light">
             <tr>

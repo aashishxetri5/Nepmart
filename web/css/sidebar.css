@@ -1,0 +1,122 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 14, 2020, 2:30:31 PM
+    Author     : Aashish Katwal
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.sidebar-container{
+    z-index: 9;
+}
+
+.hamburger-menu-btn {
+    position: fixed;
+    top: 80px;
+    left: 5px;
+    height: 35px;
+    width: 40px;
+    text-align: center;
+    background-color: #232f3e;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: left 0.4s ease;
+    z-index: 99;
+}
+
+.hamburger-menu-btn.click {
+    left: 260px;
+}
+.hamburger-menu-btn.hide {
+    display: none;
+    transition: left 0.4s ease;
+}
+.hamburger-menu-btn.click span::before {
+    content: "\f00d";
+}
+
+.hamburger-menu-btn span {
+    color: white;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    top: 0;
+    background-color: #232f3e;
+    z-index: 99;
+    transition: right 0.4s ease;
+
+}
+
+.sidebar.hide{
+    display: none;
+    transition: right 0.4s ease;
+
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: #232f3e;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #3a4858;
+    border-radius: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #131921;
+}
+
+.sidebar.show {
+    left: 0px;
+    transition: left 0.4s ease;
+}
+
+aside ul {
+    background-color: #131921;
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    list-style-type: none;
+    overflow-y: auto;
+}
+
+aside ul li {
+    line-height: 50px;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+}
+
+aside ul li a {
+    position: relative;
+    color: white;
+    font-size: 16px;
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+}
+
+aside ul li a:hover {
+    color: cyan;
+    border-left: 3px solid cyan;
+    text-decoration: none;
+}
+

@@ -1,0 +1,90 @@
+/* Show it is fixed to the top */
+/*html, body{
+    height: 100%;
+}*/
+
+.custom-bg{
+    background: #FF7F50;;
+}
+
+.login-btn,.cart, .cUser {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.navbar-dark .navbar-toggler{
+    color: rgba(255,255,255,.9);
+    outline: none;
+    border-color: rgba(255,255,255,.9);
+}
+
+.navbar .navbar-brand b {
+    font-weight: bold!important;
+    color: #563d7c!important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff;    
+}
+
+.navbar-dark .navbar-nav .cart:hover, .navbar-dark .navbar-nav .cUser:hover{
+    color: #fff;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: black
+}
+
+
+.navbar-dark .right-menu >*:hover{
+    color: #ffffff;
+}
+
+
+/*.btn-primary{
+    min-width: 100%;
+}*/
+
+.btn-primary.focus, .btn-primary:focus{
+    box-shadow: inset 0 -1px 0 #0059d9;
+}
+
+.loginBtn, .regisBtn {
+    width: 80%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to right, #e91e63, #f44336);
+    cursor: pointer;
+    /* transition: all .4s ; */
+}
+
+@media screen and (min-width:600px){
+    .dropdown-menu{
+        min-width: 6rem;
+    }
+
+    .dropdown-item{
+        padding: 0px;
+        text-align: center;
+    }  
+}
+button.close{
+    outline: none;
+}
+
+/*Main Content*/
+.page-wrapper{
+    min-height: 100%;
+}
+
+/*FOOTER STYLING*/
+a{
+    color: white;
+}

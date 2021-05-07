@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 13, 2020, 7:11:25 PM
+    Author     : Aashish Katwal
+*/
+
+.card-container-fluid .checkout-prods{
+    display: none!important;
+}
+
+/*.card-container-fluid{
+    background: red;
+    width: 100%!important;
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+    margin-right: auto!important;
+    margin-left: auto!important;
+}*/
+
+.card-container-fluid .checkout-form{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-container-fluid .checkout-form{
+    max-width: 500px;
+min-width: 90px;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-container-fluid{
+        width: 70%!important;
+
+    }
+
+    .card-container-fluid .checkout-form{
+        min-width: 340px;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .card-container-fluid{
+        width: 95%!important;
+    }
+
+    .card-container-fluid .checkout-prods{
+        display: inline-block!important;
+    }
+
+    .card-container-fluid .checkout-form{
+        max-width: 100%;
+    }
+
+}
+
+.checkout-tbl::-webkit-scrollbar {
+    width: 10px;
+}
+
+.checkout-tbl::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}

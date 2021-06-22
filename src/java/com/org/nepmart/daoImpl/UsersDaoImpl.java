@@ -119,7 +119,14 @@ public class UsersDaoImpl implements UserDao {
 
     @Override
     public void deleteUser(String uName) {
-        // TODO Auto-generated method stub
+        try {
+            String sql = "delete from users where uName = ?";
+            PreparedStatement pst = new DBConnection().getConnection().prepareStatement(sql);
+            pst.setString(1, uName);
+            pst.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(UsersDaoImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
     }
 

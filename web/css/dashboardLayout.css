@@ -1,4 +1,7 @@
 * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
@@ -183,6 +186,12 @@ span:after {
     font-weight: 700;
     color: #333;
     font-size: 18px;
+}
+
+
+.table th.category-th{
+    text-align: center !important;
+    font-size: 3rem;
 }
 
 /*? set element styles to fit tablet and higher(desktop) */

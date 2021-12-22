@@ -29,7 +29,7 @@
     
     
     
-        <!-- TO CONTACT US PAGE -->
+    <!-- TO CONTACT US PAGE -->
     <servlet>
         <servlet-name>contact</servlet-name>
         <jsp-file>/contact.jsp</jsp-file>
@@ -41,7 +41,7 @@
     
     
     
-        <!-- TO SHOP PAGE -->
+    <!-- TO SHOP PAGE -->
 
     <servlet>
         <servlet-name>shop</servlet-name>
@@ -53,7 +53,7 @@
     </servlet-mapping>
     
     
-        <!-- TO ChekOut PAGE -->
+    <!-- TO ChekOut PAGE -->
 
     <servlet>
         <servlet-name>checkout</servlet-name>
@@ -63,9 +63,6 @@
         <servlet-name>checkout</servlet-name>
         <url-pattern>/checkout</url-pattern>
     </servlet-mapping>
-    
-    
-    
     
     <!-- to redirect user to dashboard-->
     
@@ -119,7 +116,7 @@
         </session-timeout>
     </session-config>
 
-<!--TO ERROR PAGE-->
+    <!--TO ERROR PAGE-->
     <error-page>
         <exception-type>java.lang.Exception</exception-type>
         <location>/pageNotFound.jsp</location>

@@ -158,7 +158,8 @@ public class UsersDaoImpl implements UserDao {
             PreparedStatement pst = new DBConnection().getConnection().prepareStatement(sql);
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
-                if (uName.equals(rs.getString("username")) && password.equals(helper.passwordDecryption(rs.getString("user_password")))) {
+                if (uName.equals(rs.getString("username"))
+                        && password.equals(helper.passwordDecryption(rs.getString("user_password")))) {
                     isValidUser = true;
                     break;
                 }
@@ -173,12 +174,13 @@ public class UsersDaoImpl implements UserDao {
     @Override
     public List<Users> getSearchedUser(String searchValue) {
         List<Users> searchedUsers = new ArrayList<>();
-        try {
-            String sql = "select * from users ";
-            PreparedStatement pst = new DBConnection().getConnection().prepareStatement(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        // try {
+        // String sql = "select * from users ";
+        // PreparedStatement pst = new
+        // DBConnection().getConnection().prepareStatement(sql);
+        // } catch (SQLException e) {
+        // e.printStackTrace();
+        // }
         return searchedUsers;
     }
 

@@ -19,13 +19,13 @@
 
     <br>
     <table class="table table-striped">
-        <thead  class="thead-light">
+        <thead class="thead-light">
             <tr>
-                <th>S.N.</th>
-                <th>Category ID</th>
-                <th>Category Name</th>
-                <th>Category Detail</th>
-                <th colspan="2">Action</th>
+                <th class="category-th">S.N.</th>
+                <th class="category-th">Category ID</th>
+                <th class="category-th">Category Name</th>
+                <th class="category-th">Category Detail</th>
+                <th class="category-th" colspan="2">Action</th>
 
             </tr>
         </thead>

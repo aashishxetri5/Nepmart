@@ -107,9 +107,11 @@
 
     </div>
     <!-- Footer Links -->
-
+  
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <div class="footer-copyright text-center py-3">
+        <hr style="background-color: white; height: .01mm;">
+        © 2020 Copyright:
         <a href="home"> NepMart </a>
     </div>
     <!-- Copyright -->
